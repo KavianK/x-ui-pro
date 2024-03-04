@@ -16,7 +16,7 @@
 **Install Panel**:dvd::package:
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/x-ui-pro.sh) -install yes -panel 0
+bash <(wget -qO- https://raw.githubusercontent.com/KavianK/x-ui-pro/master/x-ui-pro.sh) -install yes -panel 0
 ```
 > -panel 0>alireza 1>MHSanaei 2>FranzKafkaYu
 > 
@@ -28,17 +28,17 @@ bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/x-ui-
 >
 **Add more domains**:heavy_plus_sign:	
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/x-ui-pro.sh) -subdomain sub.newdomain.com
+bash <(wget -qO- https://raw.githubusercontent.com/KavianK/x-ui-pro/master/x-ui-pro.sh) -subdomain sub.newdomain.com
 ```
 
 **Random fake html site**:earth_asia:	
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/randomfakehtml.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/KavianK/x-ui-pro/master/randomfakehtml.sh)
 ```
 
 **Uninstall**:x:
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/x-ui-pro.sh) -uninstall yes
+bash <(wget -qO- https://raw.githubusercontent.com/KavianK/x-ui-pro/master/x-ui-pro.sh) -uninstall yes
 ```
 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
