@@ -8,7 +8,7 @@ msg_inf() { echo -e "\e[1;34m$1\e[0m";}
 echo;msg_inf '           ___    _   _   _  '	;
 msg_inf		 ' \/ __ | |  | __ |_) |_) / \ '	;
 msg_inf		 ' /\    |_| _|_   |   | \ \_/ '	; echo
-RNDSTR=$(tr -dc A-Za-z0-9 </dev/urandom | head -c "$(shuf -i 6-12 -n 1)")
+
 XUIDB="/etc/x-ui/x-ui.db";domain="";UNINSTALL="x";INSTALL="n";PNLNUM=0;
 while true; do 
     PORT=$(( ((RANDOM<<15)|RANDOM) % 49152 + 10000 ))
@@ -42,6 +42,11 @@ if [[ ${UNINSTALL} == *"y"* ]]; then
 	clear && msg_ok "Completely Uninstalled!" && exit 1
 fi
 ##############################Domain Validations######################
+echo -e "\nEnter the URI path for the web panel (Enter for random path):" && read RNDSTR
+if [[ "${#RNDSTR}" == 0 ]] ; then
+	RNDSTR=$(tr -dc A-Za-z0-9 </dev/urandom | head -c "$(shuf -i 6-12 -n 1)")
+fi
+
 while true; do
 	domain=$(echo "$domain" 2>&1 | tr -d '[:space:]' )
 	SubDomain=$(echo "$domain" 2>&1 | sed 's/^[^ ]* \|\..*//g')
